@@ -1,0 +1,104 @@
+@mixin h5 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+  
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  
+    /* Text_Dark_Accent */
+  
+    color: #ef6d58;
+  }
+  @mixin h3 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 48px;
+    /* or 120% */
+  
+    /* Text_Dark */
+  
+    color: #391400;
+  }
+  @mixin p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+    /* or 200% */
+  
+    /* Text_Dark_Gray */
+  
+    color: rgba(57, 20, 0, 0.64);
+  }
+  @mixin h4 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+  
+    /* Text_Dark */
+  
+    color: #391400;
+  }
+  @mixin h1 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 80px;
+    /* identical to box height, or 111% */
+  
+    letter-spacing: -2px;
+  
+    /* Text_Light */
+  
+    color: #ffffff;
+  }
+ @mixin h2{ font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 64px;
+/* identical to box height, or 114% */
+
+letter-spacing: -1px;
+
+/* Text_Light */
+
+color: #FFFFFF;
+ }
+nav {
+    ul {
+      li {
+        a {
+          font-family: "Epilogue";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 32px;
+          color: #f3f1f1;
+          text-align: center;
+        }
+      }
+    }
+  
+    .contact {
+      font-family: "Epilogue", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  

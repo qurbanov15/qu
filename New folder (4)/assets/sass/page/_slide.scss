@@ -1,0 +1,27 @@
+#slide{
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    background: #FDF0E9;
+    >div{
+        display: flex;
+        width: 50%;
+        height: 200px;
+        
+    img{
+        width: 33.5%;
+        height: 100%;
+    }
+}
+}
+@media screen and (max-width: 720px){
+    #slide{
+       >div{
+        flex-direction: column;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+       }
+    }
+}

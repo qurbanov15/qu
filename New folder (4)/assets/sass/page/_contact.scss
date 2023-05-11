@@ -1,0 +1,139 @@
+#contact {
+  width: 100%;
+  padding: 100px 60px 150px 60px;
+  display: flex;
+  justify-content: space-between;
+  .contact_left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      position: relative;
+      background: #ffffff;
+      border-radius: 6px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+
+      gap: 23px;
+      padding: 57px 38px 57px 38px;
+      h4 {
+        @include h4;
+      }
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        input {
+          padding: 7px 0 7px 9px;
+          @include p;
+          background: #ffffff;
+          border: 1px solid #f3d1bf;
+          border-radius: 6px;
+        }
+        #select {
+          padding: 7px 0 7px 9px;
+          @include p;
+          background: #ffffff;
+          border: 1px solid #f3d1bf;
+          border-radius: 6px;
+        }
+        #message {
+          padding: 9px 0 0 16px;
+          background: #ffffff;
+          border: 1px solid #f3d1bf;
+          border-radius: 6px;
+        }
+      }
+      > button {
+        font-family: "Epilogue";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #ffffff;
+        background: #ef6d58;
+        border-radius: 6px;
+        border: 0;
+        padding: 13px 20px;
+        width: 40%;
+        position: relative;
+        left: 60%;
+      }
+    }
+  }
+  .contact_right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h5 {
+      @include h5;
+    }
+    h2 {
+      @include h2;
+    }
+    >p{
+        @include p;
+        color: rgba(255, 255, 255, 0.64);
+        width: 80%;
+    }
+    .contact_right_bottom {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      > div {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        p {
+          font-family: "Epilogue";
+          font-style: normal;
+          font-weight: 200;
+          font-size: 13px;
+          line-height: 32px;
+          /* identical to box height, or 160% */
+
+          /* Text_Light */
+
+          color: #ffffff;
+        }
+        div {
+          width: 10%;
+          position: relative;
+
+          :nth-child(1) {
+            width: 100%;
+          }
+          :nth-child(2) {
+            width: 40%;
+            position: absolute;
+            top: 28%;
+            right: 32%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px){
+    #contact{
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 30px;
+        .contact_left{
+            width: 100%;
+        }
+        .contact_right{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,177 @@
+@mixin h5{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+letter-spacing: 3px;
+text-transform: uppercase;
+
+/* Text_Light_Accent */
+
+color: #EF6D58;
+}
+@mixin h3 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 48px;
+    /* or 120% */
+  
+    /* Text_Dark */
+  
+    color: #391400;
+  }
+  @mixin p {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 32px;
+    /* or 200% */
+  
+    /* Text_Dark_Gray */
+  
+    color: rgba(57, 20, 0, 0.64);
+  }
+  @mixin h4 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+  
+    /* Text_Dark */
+  
+    color: #391400;
+  }
+  @mixin h1 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 80px;
+    /* identical to box height, or 111% */
+  
+    letter-spacing: -2px;
+  
+    /* Text_Light */
+  
+    color: #ffffff;
+  }
+@mixin h2{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    /* identical to box height, or 114% */
+    
+    letter-spacing: -1px;
+    
+    /* Text_Light */
+    
+    color: #FFFFFF;
+    
+}
+#portfolio{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    background: #28293E;
+    gap: 80px;
+    flex-direction: column;
+  
+    .portfolio_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >div{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        h5{
+          @include h5;  
+        }
+        h2{
+            @include h2;
+        }
+    }
+    button{
+        border: 1px solid rgba(255, 255, 255, 0.295743);
+        border-radius: 6px;
+        padding: 15px 30px;
+        background: #28293e;
+        font-family: "Epilogue";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+    
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #ffffff;   
+    }
+    }
+    .portfolio_bottom{
+        display: flex;
+        width: 100%;
+        gap: 40px;
+        div{
+            width: 33%;
+            padding: 260px 0 40px 40px;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 6px;
+            h3{
+                @include h3;
+                color: #ffffff;
+            }
+            button {
+                padding: 8px 17px;
+                border: 0;
+                border-radius: 16px;
+                font-family: "Epilogue";
+
+                font-weight: 300;
+                margin-bottom: 20px;
+            }
+        }
+        >:nth-child(1){
+            background-image: url("../img/Bitmap1 (2).png");
+
+        }
+        >:nth-child(2){
+            background-image: url("../img/Bitmap2.png");
+        }
+        >:nth-child(3){
+            background-image: url("../img/Bitmap 3.png");
+        }
+    }
+}
+@media screen and (max-width: 720px){
+   
+    #portfolio{
+        
+        padding: 0 20px;
+        .portfolio_top{
+            flex-direction: column;
+            align-items: start;
+           
+        
+        }
+        .portfolio_bottom{
+            
+            flex-direction: column;
+            >div{
+                width: 60%;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,195 @@
+#OurBlog {
+  background: #fdf0e9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 100px;
+  .OurBlog_start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h3 {
+        @include h3;
+      }
+      h5 {
+        @include h5;
+      }
+    }
+    button {
+      font-family: "Epilogue";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 11px;
+      line-height: 14px;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #391400;
+      background: #ffffff;
+      box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+      border-radius: 6px;
+      border: 0;
+      padding: 13px 20px;
+    }
+  }
+  .OurBlog_center {
+    display: flex;
+    justify-content: space-between;
+    .OurBlog_center_left {
+      width: 55%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      img {
+        filter: saturate(120%);
+      }
+      p {
+        @include p;
+      }
+      h3 {
+        @include h3;
+      }
+      :nth-child(2) {
+        color: #391400;
+      }
+    }
+    .OurBlog_center_right {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 30px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+          @include p;
+        }
+        :nth-child(2) {
+          color: #391400;
+        }
+        h4 {
+          @include h4;
+          width: 70%;
+        }
+      }
+    }
+  }
+  .OurBlog_end {
+    display: flex;
+    .OurBlog_end_left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h4 {
+        @include h4;
+      }
+      p {
+        @include p;
+      }
+    }
+    .OurBlog_end_right {
+      width: 50%;
+      display: flex;
+      justify-content: end;
+      form {
+        width: 80%;
+        
+       
+        input {
+          background: #ffffff;
+          border: 1px solid #f3d1bf;
+          border-radius: 7px;
+          padding: 13px;
+            width: 60%;
+        }
+        button {
+            font-family: "Epilogue";
+            font-style: normal;
+            font-weight: 900;
+            font-size: 11px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-left: 20px;
+            color: #391400;
+            background: #ffffff;
+            box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+            border-radius: 6px;
+            border: 0;
+            padding: 13px 35px;
+          }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+    #OurBlog{
+      padding: 20px;
+        .OurBlog_start{
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+            div{
+              h3{
+                width: 80%;
+              }
+            }
+        }
+        .OurBlog_center{
+            flex-direction: column;
+            .OurBlog_center_left{
+              width: 100%;
+              
+              img{
+                width: 90%;
+              }
+              h3{
+                width: 70%;
+              }
+            }
+            .OurBlog_center_right{
+              width: 100%;
+              align-items: flex-start;
+              >div{
+                width: 100%;
+              img{
+                width: 90%;
+              }
+              h4{
+                width: 60%;
+              }
+            }
+          }
+        }
+        .OurBlog_end{
+            flex-direction: column;
+            gap: 40px;
+            .OurBlog_end_right{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                input{
+                  width: 100%;
+                }
+                button{
+                  width: 100%;
+                  margin-left: 0;
+                }
+              }
+            }
+        }
+    }
+}

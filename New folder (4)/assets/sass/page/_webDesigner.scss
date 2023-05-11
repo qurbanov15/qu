@@ -1,0 +1,147 @@
+#webDesigner{
+    width: 100%;
+  padding: 100px 60px;
+
+    display: flex;
+    flex-direction: column;
+    background: #FDF0E9;
+    gap: 180px;
+    .webDesigner_top{
+       width: 100%;
+        display: flex;
+       
+        justify-content: space-between;
+    align-items: center;
+        .webDesigner_left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+
+            img {
+                width: 80%;
+                height: 90%;
+            }
+        }
+
+        .webDesigner_right {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            
+            gap: 20px;
+            h5 {
+               @include h5;
+            }
+
+            h2 {
+             @include h2;
+             color: black;
+             width: 60%;
+            }
+
+            h4 {
+             @include h4;
+             color: #391400;
+            }
+
+            p {
+               @include p;
+               width: 60%;
+            }
+
+            button {
+                font-family: "Epilogue";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 14px;
+                text-align: center;
+                text-transform: uppercase;
+                background: #ffffff;
+
+                width: 100px;
+                height: 34px;
+                border: 0px;
+                border-radius: 6px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+    .webDesigner_bottom{
+        display: flex;
+        width: 100%;
+        padding: 0 60px;
+        >:first-child{
+            border-right: 0;
+        }
+        >div{
+            width: 50%;
+            display: flex;
+            border: 1px solid #F3D1BF;
+border-radius: 6px 0px 0px 6px;
+              padding: 40px 0 40px 48px;
+            .left{
+                width: 30%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                :nth-child(1){
+                    width: 50%;
+
+                }
+                :nth-child(2){
+                    width: 20%;
+                    position: absolute;
+
+                }
+
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h3{
+                    @include h3;
+                    font-size: 45px;
+                    font-weight: 900;
+                    color: black;
+                
+                }
+                p{
+                    @include p;
+                    font-size: 18px;
+                    font-weight: 700;
+                  color:#391400;
+
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 720px){
+    #webDesigner{
+        padding: 20px;
+        .webDesigner_top{
+            flex-direction: column;
+            .webDesigner_left{
+                width: 100%;
+            }
+            .webDesigner_right{
+                width: 100%;
+            }
+        }
+        .webDesigner_bottom{
+            padding: 0;
+            flex-direction: column;
+            >div{
+                width: 100%;
+               
+            }
+            >:first-child{
+                border-right: 1px solid #F3D1BF;
+            }
+        }
+    }
+}
