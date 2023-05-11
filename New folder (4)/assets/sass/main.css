@@ -1134,13 +1134,18 @@ main {
   position: relative;
 }
 #testimonials .testimonials_cards .rating_card {
+  transition: 600ms;
   border: 1px solid #F3D1BF;
   border-radius: 6px 0px 0px 6px;
   width: 33%;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  height: 400px;
   padding: 40px 0 40px 40px;
+}
+#testimonials .testimonials_cards .rating_card > :nth-child(3) {
+  transition: 600ms;
 }
 #testimonials .testimonials_cards .rating_card > img {
   width: 35%;
@@ -1155,7 +1160,9 @@ main {
   /* Text_Dark_Gray */
   color: rgba(57, 20, 0, 0.64);
   width: 80%;
-  font-size: 18px;
+  font-size: 14px;
+  height: 45%;
+  overflow: hidden;
 }
 #testimonials .testimonials_cards .rating_card .meta {
   display: flex;
@@ -1187,24 +1194,16 @@ main {
   color: rgba(57, 20, 0, 0.64);
 }
 #testimonials .testimonials_cards .rating_card .meta img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
-#testimonials .testimonials_cards > :nth-child(1) {
-  border-right: 0px;
-  height: 400px;
-}
-#testimonials .testimonials_cards > :nth-child(3) {
-  border-left: 0px;
-  height: 400px;
-  gap: 60px;
-}
-#testimonials .testimonials_cards > :nth-child(2) {
-  background-color: white;
-  position: relative;
-  top: 0px;
+#testimonials .testimonials_cards .testimonials_resp {
   height: 450px;
-  gap: 60px;
+  background-color: #ffffff;
+}
+#testimonials .testimonials_cards .testimonials_resp > :nth-child(3) {
+  margin-top: 40px;
 }
 #testimonials > button {
   font-family: "Epilogue";
@@ -1474,17 +1473,10 @@ main {
   display: flex;
   flex-direction: column;
 }
-#faq .faq_top .faq_top_right > :first-child {
-  background-color: white;
-}
-#faq .faq_top .faq_top_right > :first-child .top h4 {
-  color: black;
-}
-#faq .faq_top .faq_top_right > :first-child .top img {
-  transform: rotate(0deg);
-}
 #faq .faq_top .faq_top_right > div {
+  transition: 600ms;
   width: 70%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   padding: 35px;
@@ -1501,6 +1493,9 @@ main {
   /* Text_Dark_Gray */
   color: rgba(57, 20, 0, 0.64);
   color: rgba(57, 20, 0, 0.64);
+  height: 0px;
+  overflow: hidden;
+  transition: 600ms;
 }
 #faq .faq_top .faq_top_right > div .top {
   display: flex;
@@ -1521,6 +1516,28 @@ main {
 }
 #faq .faq_top .faq_top_right > div .top img {
   transform: rotate(180deg);
+}
+#faq .faq_top .faq_top_right .respon_faq {
+  background-color: white;
+  height: 45%;
+}
+#faq .faq_top .faq_top_right .respon_faq p {
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  /* or 200% */
+  /* Text_Dark_Gray */
+  color: rgba(57, 20, 0, 0.64);
+  display: block;
+  height: auto;
+}
+#faq .faq_top .faq_top_right .respon_faq h4 {
+  color: black !important;
+}
+#faq .faq_top .faq_top_right .respon_faq .up {
+  transform: rotate(0deg);
 }
 #faq .faq_bottom {
   width: 100%;

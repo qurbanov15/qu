@@ -1,0 +1,50 @@
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+           display: flex;
+           gap: 60px;
+        }
+        .contact{
+            border: 1px solid #6d6a6a;
+            border-radius: 6px;
+            width: 108px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bar {
+            display: none;
+        }
+           }
+
+
+           @media screen and (max-width: 480px) {
+            nav{
+               
+           ul,.contact {
+            display: none;
+           }
+           .bar {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                font-size: 30px;
+                
+                color: aliceblue;
+            }
+           }
+
+
+          }    }
+
+

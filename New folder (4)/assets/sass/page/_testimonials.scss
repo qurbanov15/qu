@@ -41,9 +41,12 @@ background: #FDF0E9;
             >p{
                 @include p;
                 width: 80%;
-                font-size: 18px;
+                font-size: 14px;
+                height: 45%;
+                overflow: hidden;
                 
             }
+
             .meta {
                 div {
                     display: flex;
@@ -62,22 +65,13 @@ background: #FDF0E9;
                 align-items: center;
 
                 img {
-                    width: 60px;
-                    height: 60px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
                 }
             }
         }
-        >:nth-child(1){
-            >:nth-child(3){
-                transform: translateY(40px);
-            }
-        }
-        >:nth-child(3){
-           
-            >:nth-child(3){
-                transform: translateY(40px);
-            }
-        }
+        
         .testimonials_resp{
           height: 450px;
           background-color: #ffffff;

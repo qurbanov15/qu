@@ -1,0 +1,117 @@
+#events {
+  padding: 0 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  h3 {
+    @include h3;
+    color: white;
+    width: 23.1%;
+    letter-spacing: 1px;
+
+    text-align-last: center;
+  }
+  h5 {
+    @include h5;
+  }
+  button {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    color: #ffffff;
+    background: #28293E;
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 6px;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .date_card {
+      width: 32%;
+      padding: 40px 140px 30px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      border: 1px solid hsl(236, 19%, 28%);
+      border-radius: 6px;
+      height: 550px;
+
+      > :first-child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        p {
+          @include h1;
+        }
+        :nth-child(2) {
+          font-size: 25px;
+          line-height: normal;
+          width: 30%;
+        }
+      }
+      .date {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #3a3c56;
+        border-radius: 2px;
+        p {
+          @include p;
+          color: white;
+          
+        }
+        img {
+          width: 7%;
+          height: 60%;
+        }
+      }
+      .card_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h4 {
+          @include h4;
+          color: white;
+        }
+        p {
+          @include p;
+          color: rgba(255, 255, 255, 0.64);
+          font-size: 13px;
+          height: 90%;
+          overflow: hidden;
+        }
+        :nth-child(3) {
+          color: #ffffff;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #events{
+    padding: 10px;
+    h3{
+      width: 64.3%;
+    }
+    .cards{
+      flex-direction: column;
+      width: 90%;
+      gap: 40px;
+      .date_card{
+        width: 100%;
+      }
+    }
+  }
+}
